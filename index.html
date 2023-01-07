@@ -5,31 +5,44 @@
         <link rel="stylesheet" href="styles/library.css">
     </head>
     <body>
-        <div class="GameEtc">
-            <div class="SortByType">
-                <input class="gameFilter" id="gameFilter" type="image" src="assets/clientimages/dwnArrow.png" name="dwn" alt="dwn"> 
-                <div class="fakeinputSBT"></div>
-                <p class="sortByTypeParams" id="sortByTypeParams">GAMES</p>
-                
-            </div>
-            <div class="GameSearch">
-                <div class="fakeinputGS"></div>
-                <input type="text" class="searchGame" id="searchGame" name="searchGame" onchange="searchGame()">
-                <!-- <img class="scrapSearchIcon" src="assets/clientimages/x.png" alt="X"> -->
-                <input class="scrapSearchIcon" id="scrapSearchIcon" type="image" src="assets/clientimages/x.png" name="X" alt="X"> 
-                <!-- <img class="scrapSearchIcon" src="assets/clientimages/settings.png" alt="searchsettings"> -->
-                <input class="searchsettings" type="image" src="assets/clientimages/settings.png" name="searchsettings" alt="searchsettings"> 
-            </div>
+        <div class="navBar">
+            <p>bals</p>
         </div>
-            <div class="GameScroller">
-                <div class="Game" id="Counter-Strike" onclick="findGame(10)">
-                     <p class="GameName"><img class="GameIcon" draggable="false" (dragstart)="false;" src="assets/gameImages/10_icon.jpg" alt="10_icon"> Counter-Strike</p>
+        <div class="sideBar">
+            <div class="GameEtc">
+                <div class="SortByType">
+                    <div class="extraFilters">
+                        <input class="extraGameFilter" id="searchByPlayable" type="image" src="assets/clientimages/playableGamesSearchIcon.png" name="searchByPlayable" alt="searchByPlayable">
+                        <input class="extraGameFilter" id="searchByTime" type="image" src="assets/clientimages/searchByTimeIcon.png" name="searchByTime" alt="searchByTime">
+                    </div>
+                    <input class="gameFilter" id="gameFilter" type="image" src="assets/clientimages/dwnArrow.png" name="dwn" alt="dwn"> 
+                    <div class="fakeinputSBT"></div>
+                    <p class="sortByTypeParams" id="sortByTypeParams">GAMES</p>
                 </div>
-                <div class="GameSelected" id="Half-Life" onclick="findGame(70)">
-                    <p class="GameName"><img class="GameIcon" draggable="false" (dragstart)="false;" src="assets/gameImages/70_icon.jpg" alt="70_icon"> Half-Life</p>
-               </div>
+                <div class="GameSearch">
+                    <div class="fakeinputGS"></div>
+                    <input type="text" class="searchGame" id="searchGame" name="searchGame" onchange="searchGame()">
+                    <!-- <img class="scrapSearchIcon" src="assets/clientimages/x.png" alt="X"> -->
+                    <input class="scrapSearchIcon" id="scrapSearchIcon" type="image" src="assets/clientimages/x.png" name="X" alt="X"> 
+                    <!-- <img class="scrapSearchIcon" src="assets/clientimages/settings.png" alt="searchsettings"> -->
+                    <input class="searchsettings" type="image" src="assets/clientimages/settings.png" name="searchsettings" alt="searchsettings"> 
+                </div>
+            </div>
+            <div class="GameScroller">
+                    <div class="Game" id="Counter-Strike" onclick="findGame(10)">
+                        <p class="GameName"><img class="GameIcon" draggable="false" (dragstart)="false;" src="assets/gameImages/10_icon.jpg" alt="10_icon"> Counter-Strike</p>
+                    </div>
+                    <div class="GameSelected" id="Half-Life" onclick="findGame(70)">
+                        <p class="GameName"><img class="GameIcon" draggable="false" (dragstart)="false;" src="assets/gameImages/70_icon.jpg" alt="70_icon"> Half-Life</p>
+                </div>
             </div>
 
+        </div>
+
+        <div class="GameMenu">
+            <img class="GameMenuImg" src="assets/gameImages/10_library_hero.jpg" alt="gameimg">
+            <p>swexxzafadsf</p>
+        </div>
 
 
     </body>
