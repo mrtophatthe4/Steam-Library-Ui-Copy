@@ -12,10 +12,11 @@ body {
     background-color: #292E37;
 }
 .GameScroller {
+    overflow-y: scroll;
     background-color: #222429;
     width: 270px;
     top: 0px;
-    height: 100%;
+    height: 150%;
     padding: 0;
     margin: 0;
     float:left;
@@ -176,20 +177,21 @@ body {
 }
 .GameMenuImg {
     width: 100%;
-    top: 0px;
+    top: -200px;
     z-index: -1;
     position: sticky;
 }
 .GameMenuLogo {
-    top: -200px;
+    top: -300px;
     position: relative;
     z-index: 2;
+    left: 30px;
 }
 .GameMenuOptions {
     background-color: rgb(41, 46, 55, 0.75);
     backdrop-filter: blur(10px);
     border-top: 2px solid rgba(80, 90, 107, 0.5);
-    top: -190px;
+    top: -290px;
     height: 100%;
     width: 100%;
     position: relative;
@@ -210,4 +212,58 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     width: 12px;
     border-radius: 4px;
+}
+.GameMenuStats {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+.GameMenuPlayButton {
+    width: 164px;
+    height: 46px;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #4fc82f , #18b14e);
+    z-index: 3;
+    border-radius: 2px;
+}
+.GameMenuPlayButton:hover {
+    cursor: pointer;
+}
+.GameMenuPlayButton img {
+    padding-top: 13px;
+    padding-left: 45px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.GameMenuPlayButton p {
+    top: -23px;
+    left: 65px;
+    width: 65px;
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    font-size: 20px;
+    font-weight: 375;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.GameMenuLastPlayed {
+    padding-left: 20px;
+    position: relative;
+
+}
+.GameMenuLastPlayed p {
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
 }
