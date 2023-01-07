@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.GameScroller {
+    background-color: #222429;
+    width: 270px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.Game {
+    height: 24px;
+    width: 100%;
+    padding: 0px;
+    color: #A3AAB9;
+    cursor: pointer;
+}
+.Game:hover {
+    background-color: #323A4B;
+    color: #C8D0DC;
+}
+.GameSelected {
+    background-color: #3E4E69;
+    cursor: pointer;
+}
+
+.GameIcon {
+    vertical-align:middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.GameName {
+    vertical-align:middle;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.GameEtc {
+    width: 270px;
+    background-color: #292E37;
+
+}
+
+.GameSearch {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    vertical-align:middle;
+}
+.GameSearch input {
+    vertical-align:middle;
+}
+
+.searchGame {
+    border: none;
+    color: #ffffff;
+    background-color: #222429;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    vertical-align:middle;
+    position: relative;
+    z-index: 2;
+
+}
+.searchsettings {
+    position: relative;
+    z-index: 2;
+}
+.scrapSearchIcon {
+    position: relative;
+    z-index: 2;
+}
+.fakeinputGS {
+    color: #ffffff;
+    background-color: #222429;
+    border-radius: 5px;
+    height: 32px;
+    width: 257px;
+    vertical-align:middle;
+    position: absolute;
+    z-index: 1;
+}
+.SortByType {
+    padding-bottom: 14px;
+    padding-left: 5px;
+    vertical-align:middle;
+}
+
+.sortByTypeParams {
+    margin: 0;
+    vertical-align:middle;
+    position: relative; 
+    padding-top: 7px;
+    padding-left: 2px;
+    z-index: 2;
+    color: #ffffff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.fakeinputSBT {
+    color: #ffffff;
+    background-color: #222429;
+    border-radius: 5px;
+    height: 32px;
+    width: 227px;
+    vertical-align:middle;
+    position: absolute;
+    z-index: 1;
+}
+
+.gameFilter {
+    vertical-align:middle;
+    float: right;
+    position: relative; 
+    padding-top: 12px;
+    padding-right: 50px;
+    z-index: 2;
+}
